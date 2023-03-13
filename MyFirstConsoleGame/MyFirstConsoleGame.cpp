@@ -1,38 +1,12 @@
-﻿// CppPractice.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
+﻿// MyFirstConsoleGame.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
 #include <iostream>
-#include "Calculator.h"
 using namespace std;
 
 int main()
 {
-    double x = 0.0;
-    double y = 0.0;
-    double result = 0.0;
-    char oper = '+';
-    
-    
-    
-    cout << "Calculator Console Application" << endl << endl;
-    cout << "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b"<< endl;
-
-    Calculator c;
-    while (true)
-    {
-        cin >> x >> oper >> y;
-        if (oper == '/' && y == 0) {
-            cout << "Division by 0 exception" << endl;
-            continue;
-        }
-        else {
-            result = c.Calculate(x, oper, y);
-            
-        }
-        cout << "Result is: " << result << endl;
-    }
-
-    return 0;
+    cout << "Hello World!\n";
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
