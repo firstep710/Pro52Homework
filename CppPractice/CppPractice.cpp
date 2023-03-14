@@ -17,7 +17,6 @@ int main()
     cout << "Calculator Console Application" << endl << endl;
     cout << "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b"<< endl;
 
-    Calculator c;
     while (true)
     {
         cin >> x >> oper >> y;
@@ -26,7 +25,7 @@ int main()
             continue;
         }
         else {
-            result = c.Calculate(x, oper, y);
+            result = Calculator::Calculate(x, oper, y);
             
         }
         cout << "Result is: " << result << endl;

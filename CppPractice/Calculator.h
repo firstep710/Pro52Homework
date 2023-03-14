@@ -2,6 +2,6 @@
 class Calculator
 {
 public:
-	double Calculate(double x, char oper, double y);
+	static double Calculate(double x, char oper, double y);
 };
 
